@@ -1,7 +1,5 @@
 package com.jvdh.solitaire.engine
 
-import kotlin.random.Random
-
 enum class Suit(val symbol: String, val isRed: Boolean) {
     SPADES("♠", false),
     HEARTS("♥", true),
@@ -73,5 +71,3 @@ fun spiderDeck(suitCount: Int): List<Card> {
     }
     return out
 }
-
-fun <T> List<T>.shuffledWith(rng: Random): List<T> = shuffled(rng)

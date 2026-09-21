@@ -10,9 +10,6 @@ enum class GameId(val title: String) {
     PYRAMID("Pyramid"),
 }
 
-/** What the tableau of a finished game looks like, for the win check and stats. */
-data class Outcome(val won: Boolean, val stuck: Boolean)
-
 /**
  * The rules of one solitaire. Implementations are stateless: every method takes
  * the state it should reason about and returns a new one, which keeps undo,
